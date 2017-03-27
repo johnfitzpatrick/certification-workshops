@@ -18,13 +18,15 @@ $ sudo groupadd tomcat
 $ sudo useradd -g tomcat tomcat
 ```
 
-* Download the Tomcat Binary
+* Download the Tomcat Binary and sample content
 
-> NOTE: A specific binary will be mentioned below but it will likely be out of date. You can find the binaries for Tomcat 8 here at http://mirror.sdunix.com/apache/tomcat/tomcat-8/
+> NOTE: A specific binary will be mentioned below but it will likely be out of date. You can find the binaries for Tomcat 8 here at http://mirror.sdunix.com/apache/tomcat/tomcat-8/.  
+> Also need to host sample.war file somewhere
 
 ```
 $ cd /tmp
 $ wget http://mirror.sdunix.com/apache/tomcat/tomcat-8/v8.0.33/bin/apache-tomcat-8.0.33.tar.gz
+/*$ wget https://github.com/johnfitzpatrick/certification-workshops/blob/master/Tomcat/sample.war'*/
 ```
 
 * Extract the Tomcat Binary
@@ -84,6 +86,9 @@ $ sudo systemctl daemon-reload
 $ sudo systemctl start tomcat
 $ sudo systemctl enable tomcat
 ```
+<!-- 
+* Deploy the sample.war content
+$ mv /tmp/sample.war /opt/tomcat/webapps -->
 
 * Verify that Tomcat is running by visiting the site
 
