@@ -1,0 +1,21 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: centos-6.7
+
+suites:
+  - name: default
+    run_list:
+      - recipe[apache]
+      - recipe[haproxy]
+      - recipe[users]
+      - recipe[motd]
+      - recipe[my_ntp]
+      - recipe[my_chef_client]
+    cookbook_path: "./cookbooks"
+    attributes:

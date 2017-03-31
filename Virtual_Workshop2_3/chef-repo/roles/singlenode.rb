@@ -1,0 +1,5 @@
+name 'singlenode'
+description 'Single Node'
+# run_list 'recipe[apache],recipe[haproxy],recipe[users],recipe[motd]'
+run_list 'recipe[apache],recipe[haproxy],recipe[users],recipe[motd],recipe[my_ntp]'
+# run_list 'recipe[apache],recipe[haproxy],recipe[users],recipe[motd],recipe[my_ntp],recipe[my_chef_client]'

@@ -1,0 +1,21 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+# Uncomment the following verifier to leverage Inspec instead of Busser (the
+# default verifier)
+# verifier:
+#   name: inspec
+
+platforms:
+#  - name: centos-7.1
+  - name: centos-6.7
+
+suites:
+  - name: default
+    run_list:
+      - recipe[apache::default]
+    attributes:

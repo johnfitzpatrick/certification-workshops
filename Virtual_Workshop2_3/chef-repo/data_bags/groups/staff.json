@@ -1,0 +1,5 @@
+{
+    "id": "staff",
+    "gid": 3000,
+    "members": ["janedoe", "johndoe"]
+}

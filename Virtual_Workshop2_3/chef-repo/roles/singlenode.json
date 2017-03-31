@@ -1,0 +1,17 @@
+{
+    "name": "singlenode",
+    "description": "Single Node",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "default_attributes": {
+    },
+    "override_attributes": {
+    },
+    "run_list": [
+        "recipe[apache]",
+        "recipe[haproxy]",
+        "recipe[users]",
+        "recipe[motd]",
+        "recipe[my_ntp]"
+    ]
+}

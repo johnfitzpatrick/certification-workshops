@@ -1,0 +1,12 @@
+<% if node[:platform]=='centos' %>
+  server 0.rhel.pool.ntp.org
+  server 1.rhel.pool.ntp.org
+  server 2.rhel.pool.ntp.org
+<% end %>
+
+<% if node[:platform]=='ubuntu' %>
+  server 0.ubuntu.pool.ntp.org
+  server 1.ubuntu.pool.ntp.org
+  server 2.ubuntu.pool.ntp.org
+  server 3.ubuntu.pool.ntp.org
+<% end %>
