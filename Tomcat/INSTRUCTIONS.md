@@ -25,8 +25,8 @@ $ sudo useradd -g tomcat tomcat
 
 ```
 $ cd /tmp
-$ wget http://mirror.sdunix.com/apache/tomcat/tomcat-8/v8.0.33/bin/apache-tomcat-8.0.33.tar.gz
-/*$ wget https://github.com/johnfitzpatrick/certification-workshops/blob/master/Tomcat/sample.war'*/
+$ wget http://apache.mirrors.nublue.co.uk/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
+$ wget https://raw.githubusercontent.com/johnfitzpatrick/certification-workshops/master/Tomcat/sample.war
 ```
 
 * Extract the Tomcat Binary
