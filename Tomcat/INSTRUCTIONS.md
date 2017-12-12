@@ -20,12 +20,12 @@ $ sudo useradd -g tomcat tomcat
 
 * Download the Tomcat Binary and sample content
 
-> NOTE: A specific binary will be mentioned below but it will likely be out of date. You can find the binaries for Tomcat 8 here at http://mirror.sdunix.com/apache/tomcat/tomcat-8/.  
+> NOTE: A specific binary will be mentioned below but it will likely be out of date. You can find the binaries for Tomcat 8 at https://tomcat.apache.org/download-80.cgi.  
 > Also need to host sample.war file somewhere
 
 ```
 $ cd /tmp
-$ wget http://mirror.sdunix.com/apache/tomcat/tomcat-8/v8.0.33/bin/apache-tomcat-8.0.33.tar.gz
+$ wget http://apache.mirrors.hoobly.com/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz
 /*$ wget https://github.com/johnfitzpatrick/certification-workshops/blob/master/Tomcat/sample.war'*/
 ```
 
